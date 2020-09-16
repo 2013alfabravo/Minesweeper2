@@ -19,6 +19,8 @@ class Game {
             }
         }
 
+    enum class Status { RUNNING, WIN, LOSE }
+
     private fun placeMines(y: Int, x: Int) {
         mineField.placeMines(totalMines, Pair(y, x))
         mineField.generateHints()
